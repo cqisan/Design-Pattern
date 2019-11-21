@@ -14,10 +14,13 @@ import example.Pattern.StructuralPatterns.BridgePattern.BCircle;
 import example.Pattern.StructuralPatterns.BridgePattern.BShape;
 import example.Pattern.StructuralPatterns.BridgePattern.GreenCircle;
 import example.Pattern.StructuralPatterns.BridgePattern.RedCircle;
+import example.Pattern.StructuralPatterns.FilterCriteriaPattern.*;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 import javax.xml.ws.Endpoint;
+import java.util.ArrayList;
+import java.util.List;
 
 @WebService()
 public class HelloWorld {
@@ -88,5 +91,10 @@ public class HelloWorld {
         redCircle.draw();
         greenCircle.draw();
 
+        FilterPatternDemo.Instance.commandFilterPattern();
+
+
     }
+
+
 }
