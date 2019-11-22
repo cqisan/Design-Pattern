@@ -14,6 +14,7 @@ import example.Pattern.StructuralPatterns.BridgePattern.BCircle;
 import example.Pattern.StructuralPatterns.BridgePattern.BShape;
 import example.Pattern.StructuralPatterns.BridgePattern.GreenCircle;
 import example.Pattern.StructuralPatterns.BridgePattern.RedCircle;
+import example.Pattern.StructuralPatterns.CompositePattern.CompositePatternDemo;
 import example.Pattern.StructuralPatterns.FilterCriteriaPattern.*;
 
 import javax.jws.WebMethod;
@@ -91,8 +92,8 @@ public class HelloWorld {
         redCircle.draw();
         greenCircle.draw();
 
-        FilterPatternDemo.Instance.commandFilterPattern();
-
+        FilterPatternDemo.Instance.commandFilterPattern();  //过滤器模式
+        CompositePatternDemo.Instance().testEmployee();  //组合模式，以树形形式创建对象
 
     }
 
