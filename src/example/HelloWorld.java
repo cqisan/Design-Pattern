@@ -19,6 +19,7 @@ import example.Pattern.StructuralPatterns.DecoratorPattern.Cloud;
 import example.Pattern.StructuralPatterns.DecoratorPattern.DecoratorPatternDemo;
 import example.Pattern.StructuralPatterns.DecoratorPattern.Monkey;
 import example.Pattern.StructuralPatterns.DecoratorPattern.RedCloudDecorator;
+import example.Pattern.StructuralPatterns.FacadePattern.FlowerMaker;
 import example.Pattern.StructuralPatterns.FilterCriteriaPattern.*;
 
 import javax.jws.WebMethod;
@@ -98,7 +99,12 @@ public class HelloWorld {
 
         FilterPatternDemo.Instance.commandFilterPattern();  //过滤器模式
         CompositePatternDemo.Instance().testEmployee();  //组合模式，以树形形式创建对象
-        DecoratorPatternDemo.Instance().showDecoratorPattern();
+        DecoratorPatternDemo.Instance().showDecoratorPattern(); //装饰器模式
+
+        System.out.println("\n\n-------------!!! Facade  Pattern !!!------------------\n\n");
+        FlowerMaker.Instance().showCarnation();//外观模式
+        FlowerMaker.Instance().showCloveName();
+        FlowerMaker.Instance().showRoseName();
 
 
 
