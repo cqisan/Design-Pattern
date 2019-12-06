@@ -22,6 +22,7 @@ import example.Pattern.StructuralPatterns.DecoratorPattern.RedCloudDecorator;
 import example.Pattern.StructuralPatterns.FacadePattern.FlowerMaker;
 import example.Pattern.StructuralPatterns.FilterCriteriaPattern.*;
 import example.Pattern.StructuralPatterns.FlyweightPattern.FlyweightDemo;
+import example.Pattern.StructuralPatterns.ProxyPattern.ProxyPatternDemo;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
@@ -108,9 +109,10 @@ public class HelloWorld {
         FlowerMaker.Instance().showRoseName();
 
         System.out.println("\n\n-------------!!! Flyweight   Pattern !!!------------------\n\n");
-
         FlyweightDemo.Instance.show();
 
+        System.out.println("\n\n-------------!!! Proxy   Pattern !!!------------------\n\n");
+        ProxyPatternDemo.Instance.show();
 
 
     }
