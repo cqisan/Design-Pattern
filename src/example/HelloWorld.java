@@ -1,5 +1,7 @@
 package example;
 
+import example.Pattern.BehavioralPatterns.ChainofResponsibilityPattern.AbstractLogger;
+import example.Pattern.BehavioralPatterns.ChainofResponsibilityPattern.ChinaPatternDemo;
 import example.Pattern.CreationalPatterns.AbstractFactoryPattern.AbstractFactory;
 import example.Pattern.CreationalPatterns.AbstractFactoryPattern.Color;
 import example.Pattern.CreationalPatterns.AbstractFactoryPattern.FactoryProducer;
@@ -113,6 +115,15 @@ public class HelloWorld {
 
         System.out.println("\n\n-------------!!! Proxy   Pattern !!!------------------\n\n");
         ProxyPatternDemo.Instance.show();
+
+
+        System.out.println("\n\n-------------!!!    Chain of Responsibility Pattern   !!!------------------\n\n");
+        AbstractLogger loggerChain = ChinaPatternDemo.Instance.getChainOfLoggers();
+
+        loggerChain.logMessage(AbstractLogger.INFO, "This is an information.");  //输出一次，级别最低
+        loggerChain.logMessage(AbstractLogger.DEBUG, "This is an debug level information.");  //输出2次，级别是2
+        loggerChain.logMessage(AbstractLogger.ERROR, "This is an error level information.");  //输出3次，级别是3
+
 
 
     }
