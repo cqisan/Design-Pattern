@@ -3,6 +3,7 @@ package example;
 import example.Pattern.BehavioralPatterns.ChainofResponsibilityPattern.AbstractLogger;
 import example.Pattern.BehavioralPatterns.ChainofResponsibilityPattern.ChinaPatternDemo;
 import example.Pattern.BehavioralPatterns.CommandPattern.CommandPatternDemo;
+import example.Pattern.BehavioralPatterns.InterpreterPattern.InterpreterPatternDemo;
 import example.Pattern.CreationalPatterns.AbstractFactoryPattern.AbstractFactory;
 import example.Pattern.CreationalPatterns.AbstractFactoryPattern.Color;
 import example.Pattern.CreationalPatterns.AbstractFactoryPattern.FactoryProducer;
@@ -127,6 +128,12 @@ public class HelloWorld {
 
         System.out.println("\n\n-------------!!!    Command  Pattern   !!!------------------\n\n");
         CommandPatternDemo.Instance.doCommand();
+
+        System.out.println("\n\n-------------!!!    Interpret   Pattern   !!!------------------\n\n");
+        InterpreterPatternDemo.Instance.say();
+
+
+
 
 
     }
