@@ -2,6 +2,7 @@ package example;
 
 import example.Pattern.BehavioralPatterns.ChainofResponsibilityPattern.AbstractLogger;
 import example.Pattern.BehavioralPatterns.ChainofResponsibilityPattern.ChinaPatternDemo;
+import example.Pattern.BehavioralPatterns.CommandPattern.CommandPatternDemo;
 import example.Pattern.CreationalPatterns.AbstractFactoryPattern.AbstractFactory;
 import example.Pattern.CreationalPatterns.AbstractFactoryPattern.Color;
 import example.Pattern.CreationalPatterns.AbstractFactoryPattern.FactoryProducer;
@@ -124,6 +125,8 @@ public class HelloWorld {
         loggerChain.logMessage(AbstractLogger.DEBUG, "This is an debug level information.");  //输出2次，级别是2
         loggerChain.logMessage(AbstractLogger.ERROR, "This is an error level information.");  //输出3次，级别是3
 
+        System.out.println("\n\n-------------!!!    Command  Pattern   !!!------------------\n\n");
+        CommandPatternDemo.Instance.doCommand();
 
 
     }
