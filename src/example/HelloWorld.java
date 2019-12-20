@@ -4,6 +4,7 @@ import example.Pattern.BehavioralPatterns.ChainofResponsibilityPattern.AbstractL
 import example.Pattern.BehavioralPatterns.ChainofResponsibilityPattern.ChinaPatternDemo;
 import example.Pattern.BehavioralPatterns.CommandPattern.CommandPatternDemo;
 import example.Pattern.BehavioralPatterns.InterpreterPattern.InterpreterPatternDemo;
+import example.Pattern.BehavioralPatterns.IteratorPattern.IteratorPatternDemo;
 import example.Pattern.CreationalPatterns.AbstractFactoryPattern.AbstractFactory;
 import example.Pattern.CreationalPatterns.AbstractFactoryPattern.Color;
 import example.Pattern.CreationalPatterns.AbstractFactoryPattern.FactoryProducer;
@@ -132,8 +133,8 @@ public class HelloWorld {
         System.out.println("\n\n-------------!!!    Interpret   Pattern   !!!------------------\n\n");
         InterpreterPatternDemo.Instance.say();
 
-
-
+        System.out.println("\n\n-------------!!!    Iterator   Pattern   !!!------------------\n\n");
+        IteratorPatternDemo.getInstance().show();
 
 
     }

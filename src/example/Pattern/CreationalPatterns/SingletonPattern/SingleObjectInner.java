@@ -10,7 +10,7 @@ public class SingleObjectInner implements IAmSinglePattern {
 
     }
 
-    public static final SingleObjectInner getInstance() {
+    public static  SingleObjectInner getInstance() {
         return SingletonHolder.instance;
     }
 
